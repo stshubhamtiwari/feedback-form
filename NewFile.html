@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML</title>
+    <script type="text/JavaScript">
+        function showMessage(id){
+        	var x =id;
+       
+            var message = document.getElementById(x).value;
+            
+            
+           if(x == "message1"){
+            display_message.innerHTML= message;
+        }
+        
+            if(x== "message2"){
+            display_message1.innerHTML= message;
+        }
+            if(x=="message3"){
+            display_message2.innerHTML= message;
+        }
+            if(x=="message4"){
+            display_message3.innerHTML= message;
+        }
+        }
+        
+        function c(v1,v2,v3,v4){
+        	
+        	var x = v1.count(".");
+        	alert(x);
+        }
+        
+    </script>
+</head>
+<body>
+<form>
+Enter message: <input type="text" id = "message1" name="n1">
+<input type="button" onclick="showMessage(n1.id)" value="submit" />
+</form>
+<p> Message is: <span id= "display_message"  ></span> </p>
+
+<form>
+Enter message: <input type="text" id = "message2" name="n2">
+<input type="button" onclick="showMessage(n2.id)" value="submit" />
+</form>
+<p> Message is: <span id= "display_message1"></span> </p>
+
+<form>
+Enter message: <input type="text" id = "message3" name="n3">
+<input type="button" onclick="showMessage(n3.id)" value="submit" />
+</form>
+<p> Message is: <span id= "display_message2"></span> </p>
+
+<form>
+Enter message: <input type="text" id = "message4" name="n4">
+<input type="button" onclick="showMessage(n4.id)" value="submit" />
+</form>
+<p> Message is: <span id= "display_message3"></span> </p>
+
+
+<form>
+<input type="button" value="submit"  onclick="c(n1.value,n2.value,n3.value,n4.value)"/>
+</form>
+</body>
+</html>
